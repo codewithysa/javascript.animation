@@ -1,0 +1,19 @@
+body{
+    background-color:  black;
+    background-image: linear-gradient(0deg, black, rgb(30, 8, 46), rgb(41, 11, 63), rgb(41, 10, 63), rgb(53, 10, 83), rgb(66, 9, 107));
+
+}
+
+.navbar{
+    color: white;
+    display: flex;
+     height: 60px;
+     width: auto;
+     justify-content: center;
+     background-color: darkblue;
+}
+.navbars{
+    margin-top: 10px;
+    margin-left: 80px;
+    font-size: 25px;
+}
