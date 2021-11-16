@@ -4,26 +4,38 @@ body{
 
 }
 
-.header{
+.grid-header{
     color: white;
-    display: flex;
-     height: 60px;
-     width: auto;
+    display: grid;
+    grid-gap: 70px;
+    grid-template-columns: auto auto auto auto;
      justify-content: center;
      background-color: transparent;
 }
-.link{
-    margin-top: 10px;
-    margin-left: 80px;
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
-    font-family: "Lucida Console", "Courier New", monospace;
+
+@media (max-width: 378px){
+    .grid-header{
+        margin-top: 20px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        background-color: transparent;
+    }
+
 
 }
+.grid-item{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
 
 .main-section{
-   padding-top: 15%;
+   padding-top: 10%;
 }
 
 p{
@@ -32,3 +44,4 @@ p{
     justify-content: center;
     color: white;
 }
+
