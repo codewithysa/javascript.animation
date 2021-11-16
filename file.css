@@ -15,7 +15,6 @@ body{
 
 @media (max-width: 378px){
     .grid-header{
-        margin-top: 20px;
         display: grid;
         grid-gap: 20px;
         grid-template-columns: auto auto auto auto;
@@ -26,11 +25,13 @@ body{
 
 }
 .grid-item{
+    font-size: 20px;
     margin-top: 20px;
     text-align: center;
     color: white;
     text-decoration: none;
     font-family: "Lucida Console", "Courier New", monospace;
+ 
 }
 
 
@@ -38,10 +39,50 @@ body{
    padding-top: 10%;
 }
 
-p{
+.items{
     font-family: "Lucida Console", "Courier New", monospace;
     display: flex;
     justify-content: center;
     color: white;
+    transform: translateY(0%);
+    transition: none;
+    opacity: 0;
+}
+
+.click-me {
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+@keyframes click {
+    0%{opacity: 0;}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+
+.pick-color{
+    padding-top: 300px;
+}
+
+.color-container{
+    display: flex;
+    justify-content: center;
+}
+
+.colors{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    background-color: yellowgreen;
 }
 
