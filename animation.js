@@ -38,25 +38,44 @@ function myFunction(){
     items.addEventListener('click', function(){
        
       const pickColor = document.querySelector('.pick-color');
-      const gridColor = document.querySelectorAll('.grid-colors');
+      const gridColor = document.querySelectorAll('.color-header');
 
       for(i = 0; i < gridColor.length; i++){
+
         gridColor[i].style.opacity = '1';
-        gridColor[i].style.transform = 'translateY(-80%)';
+        gridColor[i].style.transform = 'translateY(-40%)';
         gridColor[i].style.transition = '3s ease';
-        gridColor[i].style.marginLeft = '10px';
-        gridColor[i].style.marginTop = '10px';
+        gridColor[i].style.gridGap = '15px';
         item2.style.opacity = '0';
         items.style.color = 'transparent';
       }
-      
-  
+ 
       pickColor.style.opacity = '1'
       pickColor.style.transition = '3s ease';
       pickColor.style.transform = 'rotateY(360deg)';
       pickColor.style.animation = '5s pickColor linear infinite'
 
     })
+
 }
 
 
+    
+window.addEventListener('scroll', myScroll);
+
+function myScroll(){
+  const section = document.querySelector('.section-header');
+   const sectionHeight = Math.ceil(scrollY)
+ 
+   if(sectionHeight >= 284){
+     section.style.transition = '2s ease';
+     section.style.transform = 'translateX(50%)';
+     section.style.opacity = '1';
+     section.style.marginTop = '0';
+   }else{
+    section.style.transition = '2s ease';
+    section.style.transform = 'translateX(-50%)';
+    section.style.opacity = '0';
+   }
+
+}
