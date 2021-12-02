@@ -14,7 +14,7 @@ function myFunction(){
        item1.style.transition = '2s ease';
        item1.style.opacity = '1';
        item1.style.fontSize = '40px';
-       item1.style.transform = 'translateY(80%)'
+       item1.style.transform = 'translateY(60%)'
        item1.style.paddingTop = '50px';
     }, 100)
 
@@ -23,9 +23,9 @@ function myFunction(){
         item1.style.transform = 'translateY(-50%)'
         item2.style.transition = '2s ease';
         item2.style.opacity = '1';
-        item2.style.transform = 'translateY(50%)'
+        item2.style.transform = 'translateY(60%)'
         item2.style.fontSize = '40px';
-    }, 3000)
+    }, 3500)
 
     setTimeout(function(){
       items.style.opacity = '1';
@@ -67,7 +67,9 @@ window.addEventListener('scroll', myScroll);
 //scroll function
 function myScroll(){
   const section = document.querySelector('.section-header');
+  const ox = document.querySelector('.ox-sign');
    const sectionHeight = Math.ceil(scrollY)
+
  
    if(sectionHeight >= 284){
      section.style.transition = '2s ease';
@@ -80,78 +82,144 @@ function myScroll(){
     section.style.opacity = '0';
    }
 
+  if(sectionHeight >= 1346){
+    ox.style.opacity = '1'
+    ox.style.transition = '3s ease';
+    ox.style.transform = 'translateY(-15%)';
+  }else{
+    ox.style.opacity = '0';
+    ox.style.transform = 'translateY(20%)';
+  }
 }
 
 
-const btn = document.querySelector('.btn');
-btn.addEventListener('click', e => {
-  e.preventDefault();
-  const birthYear = document.querySelector('.input-field').value
-  const birthYearResults = document.querySelector('.birthyear-results');
-  const birthYearResult = document.querySelector('.birthyear-result');
-  const ratResult = document.querySelector('.rat-result');
-
-  var ratYear = 1912;
-  for(i = ratYear; i < 2044; i++){
-    if(i % 12 === 4){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the rat! <br/>` 
-        birthYearResults.append(ratResult)
+const birthYear = document.querySelector('.input-field');
+const birthYearResult = document.querySelector('.birthyear-result');
+  
+ birthYear.onchange=function(){
+   var ratYear = 1912;
+   for(i = ratYear; i < 2044; i++){
+   if(i % 12 === 4){
+     if(i == this.value){
+       birthYearResult.innerHTML =  `${this.value} your are year of the rat! <a href="#rat-result">see more details</a>`
+     }
+     }else if(i % 12 === 5){
+       if(i == this.value){
+         birthYearResult.innerHTML =  `${this.value} you are year of the ox! <a href="#ox-result">see more details</a>`
+       }
+     }else if(i % 12 === 6){
+       if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the tiger! <a href="#tiger-result">see more details</a>`
+       }
+     }else if(i % 12 === 7){
+       if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the rabbit! <a href="#ox-result">see more details</a>`
+       }
+     }else if(i % 12 === 8){
+       if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the dragon! <a href="#ox-result">see more details</a>`
+       }
+     }else if(i % 12 === 9){
+       if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the snake! <a href="#ox-result">see more details</a>`
+       }
+     }else if(i % 12 === 10){
+       if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the horse! <a href="#ox-result">see more details</a>`
+       }
+     }else if(i % 12 === 11){
+       if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the sheep! <a href="#ox-result">see more details</a>`
+       }
+     }else if(i % 12 === 0){
+      if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the monkey! <a href="#ox-result">see more details</a>`
       }
-    }else if(i % 12 === 5){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the ox! <br/>`
-      }
-    }else if(i % 12 === 6){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the tiger! <br/>`
-      }
-    }else if(i % 12 === 7){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the rabbit! <br/>`
-      }
-    }else if(i % 12 === 8){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the dragon! <br/>`
-      }
-    }else if(i % 12 === 9){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the snake! <br/>`
-      }
-    }else if(i % 12 === 10){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the horse! <br/>`
-      }
-    }else if(i % 12 === 11){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the sheep! <br/>`
-      }
-    }else if(i % 12 === 0){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the monkey! <br/>`
-      }
-    }else if(i % 12 === 1){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the rooster! <br/>`
-      }
-    }else if(i % 12 === 2){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the dog! <br/>`
-      }
-    }else if(i % 12 === 3){
-      if(i == birthYear){
-        birthYearResult.innerHTML += `${i} you are year of the pig! <br/>`
-      }
-    }
+     }else if(i % 12 === 1){
+       if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the rooster! <a href="#ox-result">see more details</a>`
+       }
+     }else if(i % 12 === 2){
+       if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the dog! <a href="#ox-result">see more details</a>`
+       }
+     }else if(i % 12 === 3){
+       if(i == this.value){
+        birthYearResult.innerHTML =  `${this.value} you are year of the pig! <a href="#ox-result">see more details</a>`
+       }else if(i % 12){
+         if(this.value < ratYear){
+          birthYearResult.innerHTML =  `${this.value} not found`
+         }else if(i % 12){
+         if(this.value.length == 0){
+          birthYearResult.innerHTML =  `not found`
+         }
+         }
+       }
+     }
+   }
   }
-})
+  
+ 
+  
 
 
 
 
-
-
-
-
-
-
+  // var ratYear = 1912;
+  // for(i = ratYear; i < 2044; i++){
+  //   if(i % 12 === 4){
+  //     if(i == birthYear){
+  //      birthYearResult.innerHTML = `${i} you are year of the rat!  <br/> <br/> ` ;
+  //     }
+  //   }else if(i % 12 === 5){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the ox!  <br/> <br/> `
+  //     }
+  //   }else if(i % 12 === 6){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the tiger!  <br/> <br/>`
+  //     }
+  //   }else if(i % 12 === 7){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the rabbit!   <br/> <br/>`
+  //     }
+  //   }else if(i % 12 === 8){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the dragon!  <br/> <br/> `
+  //     }
+  //   }else if(i % 12 === 9){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the snake!  <br/> <br/>`
+  //     }
+  //   }else if(i % 12 === 10){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the horse!  <br/> <br/>`
+  //     }
+  //   }else if(i % 12 === 11){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the sheep!  <br/> <br/> `
+  //     }
+  //   }else if(i % 12 === 0){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the monkey!   <br/> <br/>`
+  //     }
+  //   }else if(i % 12 === 1){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the rooster!  <br/> <br/> `
+  //     }
+  //   }else if(i % 12 === 2){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the dog!  <br/> <br/> `
+  //     }
+  //   }else if(i % 12 === 3){
+  //     if(i == birthYear){
+  //       birthYearResult.innerHTML = `${i} you are year of the pig!  <br/> <br/>`
+  //     }else if(i % 12){
+  //       if(birthYear < ratYear){
+  //       return birthYearResult.innerHTML = `${birthYear} not found <br/> <br/>`
+  //       }
+  //     }
+  //   }
+  // }
+  
+  
