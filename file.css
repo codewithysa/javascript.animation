@@ -221,6 +221,7 @@ a{
     margin-top: 20%;
     background-color: rgb(10, 10, 61);
     border-radius: 10px;
+    opacity: 0;
 }
 
 #rat-result{
@@ -240,7 +241,7 @@ a{
     margin-right: 20%;
     background-color: rgb(10, 10, 61);
     border-radius: 10px;
-     margin-top: 15%;
+     margin-top: 5%;
      opacity: 0;
 }
 
@@ -261,7 +262,7 @@ a{
     margin-right: 20%;
     background-color: rgb(10, 10, 61);
     border-radius: 10px;
-     margin-top: 15%;
+     margin-top: 5%;
 }
 
 #tiger-result{
@@ -271,3 +272,189 @@ a{
     line-height: 1.6;
 }
 
+/*rabbit year css*/
+
+.rabbit-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(10, 10, 61);
+    border-radius: 10px;
+     margin-top: 5%;
+     opacity: 0;
+}
+
+#rabbit-result{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+/*dragon year css*/
+
+.dragon-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(10, 10, 61);
+    border-radius: 10px;
+     margin-top: 5%;
+}
+
+#dragon-result{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+/*snake year css*/
+
+.snake-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(10, 10, 61);
+    border-radius: 10px;
+     margin-top: 5%;
+}
+
+#snake-result{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+/*horse year css*/
+
+.horse-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(10, 10, 61);
+    border-radius: 10px;
+     margin-top: 5%;
+}
+
+#horse-result{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+/*sheep year css*/
+
+.sheep-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(10, 10, 61);
+    border-radius: 10px;
+     margin-top: 5%;
+}
+
+#sheep-result{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+/*monkey year css*/
+
+.monkey-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(10, 10, 61);
+    border-radius: 10px;
+     margin-top: 5%;
+}
+
+#monkey-result{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+ 
+/*rooster year css*/
+
+.rooster-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(10, 10, 61);
+    border-radius: 10px;
+     margin-top: 5%;
+}
+
+#rooster-result{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+/*dog year css*/
+.dog-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(10, 10, 61);
+    border-radius: 10px;
+     margin-top: 5%;
+}
+
+#dog-result{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+/*pig year css*/
+.pig-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(10, 10, 61);
+    border-radius: 10px;
+     margin-top: 5%;
+}
+
+#pig-result{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 30px;
+}
