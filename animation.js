@@ -42,7 +42,7 @@ function myFunction(){
       const gridColor = document.querySelectorAll('.color-header');
 
       for(i = 0; i < gridColor.length; i++){
-
+      
         gridColor[i].style.opacity = '1';
         gridColor[i].style.transform = 'translateY(-40%)';
         gridColor[i].style.transition = '3s ease';
@@ -50,7 +50,8 @@ function myFunction(){
         item2.style.opacity = '0';
         items.style.color = 'transparent';
       }
- 
+      console.log(gridColor)
+
       pickColor.style.opacity = '1'
       pickColor.style.transition = '3s ease';
       pickColor.style.transform = 'rotateY(360deg)';
@@ -105,7 +106,7 @@ function myScroll(){
 
   if(sectionHeight >= 1080){
     rat.style.opacity = '1'
-  rat.style.transition = '3s ease';
+  rat.style.transition = '2s ease';
   }else{
     rat.style.opacity = '0';
     rat.style.transform = 'translateY(5%)';
@@ -212,6 +213,7 @@ const birthYear = document.querySelector('.input-field');
 const birthYearResult = document.querySelector('.birthyear-result');
   
  birthYear.onchange=function(){
+
    var ratYear = 1912;
    for(i = ratYear; i < 2044; i++){
    if(i % 12 === 4){
@@ -262,16 +264,13 @@ const birthYearResult = document.querySelector('.birthyear-result');
        if(i == this.value){
         birthYearResult.innerHTML =  `${this.value} you are year of the pig! <a href="#pig-result">see more details</a>`
        }else if(i % 12){
-         if(this.value < ratYear){
-          birthYearResult.innerHTML =  `${this.value} not found`
-         }else if(i % 12){
-         if(this.value.length == 0){
-          birthYearResult.innerHTML =  `not found`
-         }
-         }
-       }
+        if(this.value < ratYear){
+         birthYearResult.innerHTML =  `${this.value} not found`
+        }
      }
+    }
    }
-  }
+}
   
 //onchange input event end
+
