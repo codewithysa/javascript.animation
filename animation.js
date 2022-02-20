@@ -44,7 +44,7 @@ function myFunction(){
       for(i = 0; i < gridColor.length; i++){
       
         gridColor[i].style.opacity = '1';
-        gridColor[i].style.transform = 'translateY(-40%)';
+        gridColor[i].style.transform = 'translateY(-45%)';
         gridColor[i].style.transition = '3s ease';
         gridColor[i].style.gridGap = '15px';
         item2.style.opacity = '0';
@@ -176,7 +176,7 @@ function myScroll(){
     monkey.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 3600){
+  if(sectionHeight >= 3298){
     rooster.style.opacity = '1'
     rooster.style.transition = '3s ease';
     rooster.style.transform = 'translateY(-5%)';
@@ -185,7 +185,7 @@ function myScroll(){
     rooster.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 3835){
+  if(sectionHeight >= 3298){
     dog.style.opacity = '1';
     dog.style.transition = '3s ease';
     dog.style.transform = 'translateY(-5%)';
@@ -194,7 +194,7 @@ function myScroll(){
     dog.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 3835){
+  if(sectionHeight >= 3298){
     pig.style.opacity = '1'
     pig.style.transition = '3s ease';
     pig.style.transform = 'translateY(-5%)';
