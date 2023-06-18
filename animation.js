@@ -4,10 +4,12 @@ window.addEventListener('load', myFunction);
 //onload function
 function myFunction(){
     const item = document.getElementsByClassName('items');
-    const item1 = item[0]
-    const item2 = item[1]
+    const item1 = item[0] // this is hello p tag
+    const item2 = item[1] // this is welcome to javascript p tag
+
+  //----------------------------------------------------------------------/>
     const item3 = document.getElementsByClassName('click-me');
-    const items = item3[0]
+    const items = item3[0] // this is to target specific click me p tag
 
 
     setTimeout(function(){
@@ -122,7 +124,7 @@ function myScroll(){
   }
 
    
-  if(sectionHeight >= 1860){
+  if(sectionHeight >= 1600){
     rabbit.style.opacity = '1'
     rabbit.style.transition = '3s ease';
     rabbit.style.transform = 'translateY(-5%)';
@@ -131,7 +133,7 @@ function myScroll(){
     rabbit.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 2025){
+  if(sectionHeight >= 1800){
     dragon.style.opacity = '1'
     dragon.style.transition = '3s ease';
     dragon.style.transform = 'translateY(-5%)';
@@ -140,7 +142,7 @@ function myScroll(){
     dragon.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 2300){
+  if(sectionHeight >= 2000){
     snake.style.opacity = '1'
     snake.style.transition = '3s ease';
     snake.style.transform = 'translateY(-5%)';
@@ -149,7 +151,7 @@ function myScroll(){
     snake.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 2678){
+  if(sectionHeight >= 2200){
     horse.style.opacity = '1'
     horse.style.transition = '3s ease';
     horse.style.transform = 'translateY(-5%)';
@@ -158,7 +160,7 @@ function myScroll(){
     horse.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 3000){
+  if(sectionHeight >= 2300){
     sheep.style.opacity = '1'
     sheep.style.transition = '3s ease';
     sheep.style.transform = 'translateY(-5%)';
@@ -167,7 +169,7 @@ function myScroll(){
     sheep.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 3298){
+  if(sectionHeight >= 2500){
     monkey.style.opacity = '1'
     monkey.style.transition = '3s ease';
     monkey.style.transform = 'translateY(-5%)';
@@ -176,7 +178,7 @@ function myScroll(){
     monkey.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 3298){
+  if(sectionHeight >= 2700){
     rooster.style.opacity = '1'
     rooster.style.transition = '3s ease';
     rooster.style.transform = 'translateY(-5%)';
@@ -185,7 +187,7 @@ function myScroll(){
     rooster.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 3298){
+  if(sectionHeight >= 3000){
     dog.style.opacity = '1';
     dog.style.transition = '3s ease';
     dog.style.transform = 'translateY(-5%)';
@@ -194,7 +196,7 @@ function myScroll(){
     dog.style.transform = 'translateY(10%)';
   }
 
-  if(sectionHeight >= 3298){
+  if(sectionHeight >= 3300){
     pig.style.opacity = '1'
     pig.style.transition = '3s ease';
     pig.style.transform = 'translateY(-5%)';
@@ -218,7 +220,7 @@ const birthYearResult = document.querySelector('.birthyear-result');
    for(i = ratYear; i < 2044; i++){
    if(i % 12 === 4){
      if(i == this.value){
-       birthYearResult.innerHTML =  `${this.value} your are year of the rat! <a href="#rat-result">see more details</a>`
+       birthYearResult.innerHTML =  `${this.value} you are year of the rat! <a href="#rat-result">see more details</a>`
      }
      }else if(i % 12 === 5){
        if(i == this.value){
